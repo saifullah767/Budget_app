@@ -1,1 +1,10 @@
 <h1> this is groups </h1>
+
+<%if (@groups.any?)%>
+    <% @groups.each do |group| %>
+        <%= render partial: "shared/group", locals: { group: group } %>
+    <% end %>
+<% else %>
+    <h3>'Category records not found!'</h3>
+<% end %>
+<%= link_to "Add Category", new_group_path %>
