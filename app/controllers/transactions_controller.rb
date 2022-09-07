@@ -1,6 +1,6 @@
 class TransactionsController < ApplicationController
-    before_action :set_group, only: %i[new create edit update destroy]
-    before_action :set_transaction, only: %i[edit update destroy]
+  before_action :set_group, only: %i[new create edit update destroy]
+  before_action :set_transaction, only: %i[edit update destroy]
 
   def index
     @group = Group.where(user_id: current_user.id, id: params[:group_id])
@@ -16,8 +16,8 @@ class TransactionsController < ApplicationController
     @transaction.group_id = @group.id
 
     if @transaction.save
-        flash[:notice] = 'Transaction was successfully created.'
-        redirect_to group_path(@group)
+      flash[:notice] = 'Transaction was successfully created.'
+      redirect_to group_path(@group)
     else
       flash[:error] = 'Error creating transaction'
       redirect_to new_group_transaction_path(@group)
@@ -26,11 +26,11 @@ class TransactionsController < ApplicationController
 
   def destroy
     if @transaction.destroy
-        flash[:notice] = 'Transaction was successfully created.'
-        redirect_to group_path
-      else
-        flash[:error] = 'Error creating transaction'
-      end
+      flash[:notice] = 'Transaction was successfully created.'
+      redirect_to group_path
+    else
+      flash[:error] = 'Error creating transaction'
+    end
   end
 
   def transaction_params

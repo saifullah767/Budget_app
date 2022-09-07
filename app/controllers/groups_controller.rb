@@ -23,11 +23,11 @@ class GroupsController < ApplicationController
 
   def destroy
     if @group.destroy
-        flash[:notice] = 'Category was successfully destroyed.'
-        redirect_to @group
-      else
-        flash[:error] = 'Error deleting category'
-      end
+      flash[:notice] = 'Category was successfully destroyed.'
+      redirect_to @group
+    else
+      flash[:error] = 'Error deleting category'
+    end
   end
 
   def group_params
