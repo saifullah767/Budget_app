@@ -1,15 +1,11 @@
-<h1>Users</h1>
-<h1> Saif Budget </h1>
+<div class='container' >
+  <div class='loginForm'>
 
-<img class="splash-image" src="<%= image_path("budget_logo.png") %>" alt="splash_icon"/> <br>
 
-<%if current_user%>
-  <h2 class="welcome">Welcome, <%= current_user.name %>!</h2>
-<% end %>
-<%if current_user%>
-  <%= link_to "Categories", groups_path %>
-  <%= link_to "Log Out", destroy_user_session_path, method: :delete%>
-<% else %>
-  <%= link_to "Log In", new_user_session_path %>
-  <%= link_to "Sign Up", new_user_registration_path %>
-<% end %>
+  <h1>Budget App by SaifUllah</h1>
+
+  <img class="splash-image" src="<%= image_path("budget_logo.png") %>" alt="splash_icon"/> <br>
+
+
+  </div>
+</div>
