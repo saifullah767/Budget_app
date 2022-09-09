@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'User', type: :feature do
   before(:all) do
-    @user = User.create(name: 'Saifullah', email: 'saif.kj@gmail.com', password: '123456')
+    @user = User.create(name: 'saif kj', email: 'saif.kj@gmail.com', password: '123456')
   end
   scenario 'Sign In' do
     visit root_path

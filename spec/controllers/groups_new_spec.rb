@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Category', type: :feature do
   before :each do
-    @user = User.create(name: 'saifulah', email: 'saif@gmail.com', password: '123456')
+    @user = User.create(name: 'saif kj', email: 'saif.kj@gmail.com', password: '123456')
 
     visit root_path
     visit new_user_session_path

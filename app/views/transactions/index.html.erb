@@ -1,11 +1,11 @@
 <div class='container' >
-<div class='loginForm-transaction-list'>
+  <div class='loginForm-transaction-list'>
 
-    <h1>Transactions Lists</h1>
+    <h2>Transactions Lists</h2>
 
     <% @group.each do |group| %>
       <div class='transaction-container'>
-      <%= render partial: "shared/group", locals: { group: group } %>
+        <%= render partial: "shared/group", locals: { group: group } %>
       </div>
       <br>
       <div class='transaction-container'>
@@ -20,10 +20,9 @@
             </div>
           <% end %>
         </div>
-
         <br>
-
         <%= button_to link_to "New Transaction", new_group_transaction_path(group) %>
+
     <% end %>
   </div>
 </div>
