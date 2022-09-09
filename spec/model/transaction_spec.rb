@@ -11,7 +11,7 @@ RSpec.describe Transaction, type: :model do
   end
 
   it 'expect to save the entry' do
-    @user = User.create(name: 'saifullah', email: 'saif.kj@gmail.com', password: '123456')
+    @user = User.create(name: 'saif kj', email: 'saif.kj@gmail.com', password: '123456')
     @group = Group.create(user_id: @user.id, name: 'Icon1', icon: '🎉')
     @transaction = Transaction.create(user_id: @user.id, name: 'fast-food', amount: 60, group_id: @group.id)
     expect(@transaction.name).to eq 'fast-food'

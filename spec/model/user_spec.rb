@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
   subject do
-    @user = User.create(name: 'saifullah', email: 'saif.kj@gmail.com', password: '123456')
+    @user = User.create(name: 'saif kj', email: 'saif.kj@gmail.com', password: '123456')
   end
 
   before { subject.save }
@@ -18,7 +18,7 @@ RSpec.describe User, type: :model do
   end
 
   it 'Entry should be valid' do
-    user = User.new(name: 'ahmed', email: 'ahmed@gmail.com', password: '123456')
+    user = User.new(name: 'Saif', email: 'saif@gmail.com', password: '123456')
     expect(user).to be_valid
   end
 end

@@ -1,5 +1,5 @@
 <div class='container' >
-<div class='loginForm-signup'>
+    <div class='loginForm-signup'>
       <h2>Sign up</h2>
 
       <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -29,9 +29,10 @@
         </div>
 
         <div class="actions"><br>
-        <%= f.submit "Sign up", class:'add-button-signup'  %>
+          <%= f.submit "Sign up", class:'add-button-signup'  %>
         </div>
       <% end %>
+
       <%= render "devise/shared/links" %>
     </div>
 </div>
