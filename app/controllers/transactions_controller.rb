@@ -7,6 +7,7 @@ class TransactionsController < ApplicationController
   end
 
   def new
+    @transaction = Transaction.new
     @group = Group.where(user_id: current_user)
   end
 
@@ -17,7 +18,7 @@ class TransactionsController < ApplicationController
 
     if @transaction.save
       flash[:notice] = 'Transaction was successfully created.'
-      redirect_to group_path(@group)
+      redirect_to group_transactions_path
     else
       flash[:error] = 'Error creating transaction'
       redirect_to new_group_transaction_path(@group)
