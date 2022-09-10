@@ -22,8 +22,11 @@ This Ruby on Rails application allows the user to:
 - CSS
 
 
-## Video Presentation ()
 
+## Heroku link ()
+[Live Demo Link](https://skj-budget.herokuapp.com/)
+
+## Video Presentation ()
 [Live Demo Link](https://youtu.be/MbGCT7fTWLI)
 
 
@@ -87,4 +90,7 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
+
 This project is [MIT](./LICENSE) licensed.
+
+
