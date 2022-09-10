@@ -24,7 +24,7 @@ This Ruby on Rails application allows the user to:
 
 ## Video Presentation ()
 
-[Live Demo Link](https://youtu.be/MbGCT7fTWLI)
+[Live Demo Link](https://youtu.be/lDvoD5OK6y8)
 
 
 
